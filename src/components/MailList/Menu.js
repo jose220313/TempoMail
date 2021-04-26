@@ -1,21 +1,20 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRedoAlt, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faRedoAlt, faTrash, faCopy } from "@fortawesome/free-solid-svg-icons";
 import "./MailList.styles.css";
+import { CircleButton } from "../Button/CustumButtons";
 
 const Menu = () => {
   return (
     <div className="container-mails">
       <div className="menu">
-        <div className="option refresh">
-          <p>
-            <FontAwesomeIcon icon={faRedoAlt} className="faRedoAlt" /> Refresh
-          </p>
+        <div className="option is-option-validate">
+          <CircleButton title={"Copy"} icon={faCopy} />
         </div>
-        <div className="option delete">
-          <p>
-            <FontAwesomeIcon icon={faTrash} className="faTrash" /> Delete
-          </p>
+        <div className="option">
+          <CircleButton title={"Refresh"} icon={faRedoAlt} />
+        </div>
+        <div className="option">
+          <CircleButton title={"Delete"} icon={faTrash} />
         </div>
       </div>
     </div>

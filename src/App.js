@@ -1,13 +1,21 @@
-import GenerateMail from "./components/GenerateMail/GenerateMail";
-import MailList from "./components/MailList/MailList";
-import ReadMail from "./components/ReadMail/ReadMail";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { userRoutes } from "./routes/index.routes";
 
 function App() {
   return (
     <div>
-      <GenerateMail />
-      {/* <MailList /> */}
-      <ReadMail />
+      <BrowserRouter>
+        <Switch>
+          {userRoutes.map((route, key) => (
+            <Route
+              key={key}
+              path={route.path}
+              component={route.component}
+              exact={route.exact}
+            />
+          ))}
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

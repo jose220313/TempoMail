@@ -1,0 +1,19 @@
+.circle-button {
+    width: 150px;
+    height: 45px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 50px;
+    background: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 360px) {
+    .circle-button {
+        width: 100px;
+        height: 45px;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 50px;
+        background: #fff;
+        cursor: pointer;
+    }
+}

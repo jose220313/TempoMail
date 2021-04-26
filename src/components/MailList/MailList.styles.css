@@ -1,474 +1,137 @@
 .not-avalible {
-    display: none;
+  display: none;
 }
 
-@media screen and (min-width: 150px) and (max-width: 200px)   {
-    .container-mails {
-        display: none;
-    }
+.container-mails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
 
-    .container-table {
-        display: none;
-    }
-    
-    .not-avalible {
-        display: block;
-    }
+.container-mails .menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-inbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-inbox .inbox-content .inbox {
+  display: flex;
+  margin: 15px;
+  border-bottom: 1px solid rgb(223, 219, 219);
+  cursor: pointer;
+}
+
+.container-mails .menu .option {
+  margin: 5px;
+}
+
+.container-inbox .inbox-header {
+  background: rgb(30, 32, 32);
+  border-radius: 5px;
+}
+
+.container-inbox .inbox-header p {
+  margin: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.container-inbox .inbox-content .inbox .icon-message {
+  margin-right: 15px;
+  color: rgb(165, 165, 165);
+  font-size: 25px;
+}
+
+.container-inbox .inbox-content .inbox .inbox-from {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 150px) and (max-width: 200px) {
+  .container-mails {
+    display: none;
+  }
+
+  .container-table {
+    display: none;
+  }
+
+  .not-avalible {
+    display: block;
+  }
+
+  .is-option-validate {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 360px) {
-    .container-mails {
-        padding: 15px;
-    }
-    .container-mails .tempo {
-        font-size: 14px;
-        margin-left: 5px;
-        color: rgb(196, 196, 196);
-    }
-    .container-mails .menu {
-        display: flex;
-        flex-direction: row;
-    }
-    .container-mails .menu .option {
-        margin: 5px;
-        font-size: 12px;
-        width: 100px;
-        border: 1px solid rgb(194, 194, 194);
-        border-radius: 50px;
-        text-align: center;
-        cursor: pointer;
-        transition: all .2s ease;
-    }
+  .is-option-validate {
+    display: none;
+  }
 
-    .container-mails .menu .option.refresh:hover {
-        border: 1px solid rgb(16, 151, 175);
-    }
+  /*STYLES TABLE*/
+  .container-inbox .inbox-header {
+    width: 90%;
+  }
 
-    .container-mails .menu .option.delete:hover {
-        border: 1px solid rgb(235, 81, 81);
-    }
-
-    .container-mails .menu .option svg {
-        color: grey;
-    }
-
-
-
-    /*STYLES TABLE*/
-
-    .container-table {
-        padding: 15px;
-    }
-
-    .container-table table {
-        width: 100%;;
-    }
-    .container-table table thead {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .container-table table .column-user {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .container-table table .column-user .icon-msg svg {
-        color: rgb(189, 191, 192);
-        font-size: 25px;
-        margin: 10px;
-    }
-
-    .container-table table tbody tr {
-        border: 1px solid red;
-    }
-
-    .container-table table .column-user .user-info .user-info-name {
-        font-size: 14px;
-    }
-
-    .container-table table .column-user .user-info .user-info-email {
-        font-size: 12px;
-        color: grey;
-    }
-
-    .container-table table .user-info-subject {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .container-table table .user-info-date {
-        font-size: 12px;
-        text-align: center;
-    }
+  .container-inbox .inbox-content {
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 360px) and (max-width: 640px) {
-    .container-mails {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-    }
-    .container-mails .tempo {
-        font-size: 14px;
-        margin-left: 5px;
-        color: rgb(196, 196, 196);
-    }
-    .container-mails .menu {
-        display: flex;
-        flex-direction: row;
-    }
-    .container-mails .menu .option {
-        margin: 5px;
-        font-size: 12px;
-        width: 100px;
-        border: 1px solid rgb(194, 194, 194);
-        border-radius: 50px;
-        text-align: center;
-        cursor: pointer;
-        transition: all .2s ease;
-    }
+  .is-option-validate {
+    display: none;
+  }
 
-    .container-mails .menu .option.refresh:hover {
-        border: 1px solid rgb(16, 151, 175);
-    }
+  /*STYLES TABLE*/
+  .container-inbox .inbox-header {
+    width: 90%;
+  }
 
-    .container-mails .menu .option.delete:hover {
-        border: 1px solid rgb(235, 81, 81);
-    }
-
-    .container-mails .menu .option svg {
-        color: grey;
-    }
-
-
-
-    /*STYLES TABLE*/
-
-    .container-table {
-        display: flex;
-        justify-content: center;
-        padding: 15px;
-    }
-
-    .container-table table {
-        width: 90%;;
-    }
-    .container-table table thead {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .container-table table .column-user {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .container-table table .column-user .icon-msg svg {
-        color: rgb(189, 191, 192);
-        font-size: 25px;
-        margin: 10px;
-    }
-
-    .container-table table tbody tr {
-        border: 1px solid red;
-    }
-
-    .container-table table .column-user .user-info .user-info-name {
-        font-size: 14px;
-    }
-
-    .container-table table .column-user .user-info .user-info-email {
-        font-size: 12px;
-        color: grey;
-    }
-
-    .container-table table .user-info-subject {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .container-table table .user-info-date {
-        font-size: 12px;
-        text-align: center;
-    }
+  .container-inbox .inbox-content {
+    width: 90%;
+  }
 }
-
 
 @media screen and (min-width: 640px) and (max-width: 900px) {
-    .container-mails {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-    }
-    .container-mails .tempo {
-        font-size: 14px;
-        margin-left: 5px;
-        color: rgb(196, 196, 196);
-    }
-    .container-mails .menu {
-        display: flex;
-        flex-direction: row;
-    }
-    .container-mails .menu .option {
-        margin: 5px;
-        font-size: 12px;
-        width: 100px;
-        border: 1px solid rgb(194, 194, 194);
-        border-radius: 50px;
-        text-align: center;
-        cursor: pointer;
-        transition: all .2s ease;
-    }
+  /*STYLES TABLE*/
+  .container-inbox .inbox-header {
+    width: 80%;
+  }
 
-    .container-mails .menu .option.refresh:hover {
-        border: 1px solid rgb(16, 151, 175);
-    }
-
-    .container-mails .menu .option.delete:hover {
-        border: 1px solid rgb(235, 81, 81);
-    }
-
-    .container-mails .menu .option svg {
-        color: grey;
-    }
-
-
-
-    /*STYLES TABLE*/
-
-    .container-table {
-        display: flex;
-        justify-content: center;
-        padding: 15px;
-    }
-
-    .container-table table {
-        width: 70%;;
-    }
-    .container-table table thead {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .container-table table .column-user {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .container-table table .column-user .icon-msg svg {
-        color: rgb(189, 191, 192);
-        font-size: 25px;
-        margin: 10px;
-    }
-
-    .container-table table tbody tr {
-        border: 1px solid red;
-    }
-
-    .container-table table .column-user .user-info .user-info-name {
-        font-size: 14px;
-    }
-
-    .container-table table .column-user .user-info .user-info-email {
-        font-size: 12px;
-        color: grey;
-    }
-
-    .container-table table .user-info-subject {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .container-table table .user-info-date {
-        font-size: 12px;
-        text-align: center;
-    }
+  .container-inbox .inbox-content {
+    width: 80%;
+  }
 }
 
-
 @media screen and (min-width: 900px) and (max-width: 1366px) {
-    .container-mails {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-    }
-    .container-mails .tempo {
-        font-size: 14px;
-        margin-left: 5px;
-        color: rgb(196, 196, 196);
-    }
-    .container-mails .menu {
-        display: flex;
-        flex-direction: row;
-    }
-    .container-mails .menu .option {
-        margin: 5px;
-        font-size: 12px;
-        width: 100px;
-        border: 1px solid rgb(194, 194, 194);
-        border-radius: 50px;
-        text-align: center;
-        cursor: pointer;
-        transition: all .2s ease;
-    }
+  /*STYLES TABLE*/
+  .container-inbox .inbox-header {
+    width: 50%;
+  }
 
-    .container-mails .menu .option.refresh:hover {
-        border: 1px solid rgb(16, 151, 175);
-    }
-
-    .container-mails .menu .option.delete:hover {
-        border: 1px solid rgb(235, 81, 81);
-    }
-
-    .container-mails .menu .option svg {
-        color: grey;
-    }
-
-
-
-    /*STYLES TABLE*/
-
-    .container-table {
-        display: flex;
-        justify-content: center;
-        padding: 15px;
-    }
-
-    .container-table table {
-        width: 50%;;
-    }
-    .container-table table thead {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .container-table table .column-user {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .container-table table .column-user .icon-msg svg {
-        color: rgb(189, 191, 192);
-        font-size: 25px;
-        margin: 10px;
-    }
-
-    .container-table table tbody tr {
-        border: 1px solid red;
-    }
-
-    .container-table table .column-user .user-info .user-info-name {
-        font-size: 14px;
-    }
-
-    .container-table table .column-user .user-info .user-info-email {
-        font-size: 12px;
-        color: grey;
-    }
-
-    .container-table table .user-info-subject {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .container-table table .user-info-date {
-        font-size: 12px;
-        text-align: center;
-    }
+  .container-inbox .inbox-content {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1920px) {
-    .container-mails {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-    }
-    .container-mails .tempo {
-        font-size: 14px;
-        margin-left: 5px;
-        color: rgb(196, 196, 196);
-    }
-    .container-mails .menu {
-        display: flex;
-        flex-direction: row;
-    }
-    .container-mails .menu .option {
-        margin: 5px;
-        font-size: 12px;
-        width: 100px;
-        border: 1px solid rgb(194, 194, 194);
-        border-radius: 50px;
-        text-align: center;
-        cursor: pointer;
-        transition: all .2s ease;
-    }
+  /*STYLES TABLE*/
+  .container-inbox .inbox-header {
+    width: 50%;
+  }
 
-    .container-mails .menu .option.refresh:hover {
-        border: 1px solid rgb(16, 151, 175);
-    }
-
-    .container-mails .menu .option.delete:hover {
-        border: 1px solid rgb(235, 81, 81);
-    }
-
-    .container-mails .menu .option svg {
-        color: grey;
-    }
-
-
-
-    /*STYLES TABLE*/
-
-    .container-table {
-        display: flex;
-        justify-content: center;
-        padding: 15px;
-    }
-
-    .container-table table {
-        width: 50%;;
-    }
-    .container-table table thead {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .container-table table .column-user {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .container-table table .column-user .icon-msg svg {
-        color: rgb(189, 191, 192);
-        font-size: 25px;
-        margin: 10px;
-    }
-
-    .container-table table tbody tr {
-        border: 1px solid red;
-    }
-
-    .container-table table .column-user .user-info .user-info-name {
-        font-size: 14px;
-    }
-
-    .container-table table .column-user .user-info .user-info-email {
-        font-size: 12px;
-        color: grey;
-    }
-
-    .container-table table .user-info-subject {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .container-table table .user-info-date {
-        font-size: 12px;
-        text-align: center;
-    }
+  .container-inbox .inbox-content {
+    width: 50%;
+  }
 }
