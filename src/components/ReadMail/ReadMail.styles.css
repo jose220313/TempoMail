@@ -1,0 +1,49 @@
+.not-avalible {
+    display: none;
+}
+
+@media screen and (min-width: 150px) and (max-width: 200px)   {
+    .container-readmail {
+        display: none;
+    }
+
+    .container-table {
+        display: none;
+    }
+    .not-avalible {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .container-readmail {
+        padding: 15px;
+    }
+
+    .container-readmail .mail {
+        margin-top: 25px;
+        font-size: 15px;
+    }
+
+    .container-readmail .mail .mail-tmp {
+        margin: 15px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1920px) {
+    .container-readmail {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .container-readmail .mail {
+        margin-top: 25px;
+        font-size: 15px;
+    }
+
+    .container-readmail .mail .mail-tmp {
+        margin: 15px;
+    }
+}
+

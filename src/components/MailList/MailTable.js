@@ -8,7 +8,6 @@ import {
 const MailTable = () => {
   return (
     <>
-      <div className="not-avalible">Not avalible</div>
       <div className="container-table">
         <table>
           <thead>
