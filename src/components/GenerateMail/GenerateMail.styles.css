@@ -1,0 +1,111 @@
+.not-avalible {
+    display: none;
+}
+
+.faChevronCircleRight {
+    color: rgb(16, 151, 175);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 150px) and (max-width: 200px)   {
+    .container-generator {
+        display: none;
+    }
+    
+    .not-avalible {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 360px)   {
+    .container-generator {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(30, 32, 32);
+        width: 100%;
+        height: 250px;
+    }
+    .container-generator .input-generator {
+        padding: 15px;
+    }
+
+    .container-generator .input-generator .label-email {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .container-generator .input-generator input {
+        width: 200px;
+        height: 25px;
+        border: 2px solid rgb(104, 189, 204);
+        background: rgb(61, 65, 65);
+        border-radius: 50px;
+        color: #fff;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    .container-generator .copy-button button {
+        border: none;
+        border-radius: 50px;
+        width: 70px;
+        height: 30px;
+        background: rgb(16, 151, 175);
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .container-generator .copy-button button:hover {
+        background: rgb(28, 156, 179);
+    }
+}
+
+
+
+@media screen and (min-width: 360px) and (max-width: 1920px)   {
+    .container-generator {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(30, 32, 32);
+        width: 100%;
+        height: 250px;
+    }
+    .container-generator .input-generator {
+        padding: 15px;
+    }
+
+    .container-generator .input-generator .label-email {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .container-generator .input-generator input {
+        width: 300px;
+        height: 25px;
+        border: 2px solid rgb(104, 189, 204);
+        background: rgb(61, 65, 65);
+        border-radius: 50px;
+        color: #fff;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    .container-generator .copy-button button {
+        border: none;
+        border-radius: 50px;
+        width: 70px;
+        height: 30px;
+        background: rgb(16, 151, 175);
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .container-generator .copy-button button:hover {
+        background: rgb(28, 156, 179);
+    }
+}
+
